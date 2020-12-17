@@ -19,3 +19,13 @@ function determineSubsets<T>(specifiedSet: Set<T>, excludeEmptySet = false): num
 function determineCardinality<T>(specifiedSet: Set<T>): number {
     return specifiedSet.size;
 }
+
+function calculateSetDifference<T>(setA: Set<T>, setB: Set<T>): Set<T> {
+    const placeholderSet: Set<T> = new Set();
+    setA.forEach(function(value) {
+        placeholderSet.add(value);
+        if (setB.has(value))
+            placeholderSet.delete(value);
+    });
+    return placeholderSet;
+}
