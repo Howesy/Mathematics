@@ -20,6 +20,12 @@ function determineCardinality<T>(specifiedSet: Set<T>): number {
     return specifiedSet.size;
 }
 
+/**
+ * Function to determine the difference between two specified sets.
+ * @param setA Initial set you wish to find the difference of.
+ * @param setB Secondary set you wish to find the difference with.
+ */
+
 function calculateSetDifference<T>(setA: Set<T>, setB: Set<T>): Set<T> {
     const placeholderSet: Set<T> = new Set();
     setA.forEach(function(value) {
