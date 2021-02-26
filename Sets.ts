@@ -35,3 +35,13 @@ function calculateSetDifference<T>(setA: Set<T>, setB: Set<T>): Set<T> {
     });
     return placeholderSet;
 }
+
+function unionSets<T>(initialSet: Set<T>, ...specifiedSets: Set<T>[]): Set<T> {
+    specifiedSets.forEach(function(retrievedSet) {
+        retrievedSet.forEach(function(value) {
+            initialSet.add(value);
+        });
+    });
+
+    return initialSet;
+}
