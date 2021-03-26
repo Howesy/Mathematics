@@ -16,7 +16,7 @@ function calculateHorners(binaryValue: number): number {
     return parsedInitialValue;
 }
 
-const hornersValue: number = calculateHorners(110110);
+const hornersValue: number = calculateHorners(11011001);
 console.log(hornersValue);
 
 //Horners Algorithm Logic.

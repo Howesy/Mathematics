@@ -35,7 +35,7 @@ function calculateHornersDecimal(binaryValue: number): Array<string>
     return placeholderArray;
 }
 
-const calculatedAnswers: Array<string> = calculateHornersDecimal(10101001);
+const calculatedAnswers: Array<string> = calculateHornersDecimal(11100011);
 calculatedAnswers.forEach(function(answer) {
     const fraction = decimalToFraction(answer);
     console.log(fraction.display);
